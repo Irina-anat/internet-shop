@@ -4,7 +4,10 @@ import { createModal } from './helpers/createModal';
 import { findProduct } from './helpers/findProduct';
 import { common } from './helpers/common';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import $ from 'jquery';
+
+import { btn } from './helpers/scroll';
+console.log(btn)
+
 
 
 const arrFavorite = JSON.parse(localStorage.getItem(common.favoriteItems)) || [];
@@ -48,26 +51,6 @@ function onClick(e) {
     console.log(arrBasket);
     localStorage.setItem(common.basketItems, JSON.stringify(arrBasket));
   };
-
 };
-
-
-const btn = $('#button');
-
-//console.log(btn)
-
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
-
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
-
 
 

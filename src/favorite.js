@@ -2,6 +2,8 @@ import { createMarcup } from "./helpers/cards";
 import { common } from "./helpers/common";
 import { findProduct } from "./helpers/findProduct";
 import { createModal } from "./helpers/createModal";
+import { btn } from "./helpers/scroll";
+console.log(btn)
                                                                 //null undefined
 const arrFavorite = JSON.parse(localStorage.getItem(common.favoriteItems)) ?? [];
 
@@ -36,5 +38,8 @@ function onClick(e) {
         localStorage.setItem(common.favoriteItems, JSON.stringify(arrFavorite))
     }
 };
+
+
+
 
 

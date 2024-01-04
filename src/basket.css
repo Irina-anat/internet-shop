@@ -1,3 +1,4 @@
-.js-basketBtn{
+.js-basketBtn,
+.js-favorite{
     display: none;
 }

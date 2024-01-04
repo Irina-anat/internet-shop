@@ -2,6 +2,8 @@ import { createMarcup } from "./helpers/cards";
 import { common } from "./helpers/common";
 import { findProduct } from "./helpers/findProduct";
 import { createModal } from "./helpers/createModal";
+import { btn } from "./helpers/scroll";
+console.log(btn)
                                                                
 const arrBasket = JSON.parse(localStorage.getItem(common.basketItems)) ?? [];
 
