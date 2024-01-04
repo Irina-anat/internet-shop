@@ -1,0 +1,1 @@
+{"mappings":"ACAA","sources":["basket.566e80ba.css","src/basket.css"],"sourcesContent":[".js-basketBtn, .js-favorite {\n  display: none;\n}\n\n/*# sourceMappingURL=basket.566e80ba.css.map */\n",".js-basketBtn,\n.js-favorite{\n    display: none;\n}"],"names":[],"version":3,"file":"basket.566e80ba.css.map"}
