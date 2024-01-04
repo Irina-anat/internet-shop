@@ -5,16 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Internet-shop</title>
   <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+ <link rel="stylesheet" href="../node_modules/notiflix/dist/notiflix-3.2.7.min.css"/>
   <link rel="stylesheet" href="style.css">
   <script type="module" src="./index.js"></script>
 </head>
 <body>
   <header>
-    <a href="#">Home</a>
-    <a href="./favorite.html">Favorite</a>
-    <a href="./checkout.html">Checkout</a>
+    <nav>
+    <a class="navigation visited" href="#">Home</a>
+    <a class="navigation" href="./favorite.html">Favorite</a>
+    <a class="navigation" href="./basket.html">Basket</a>
+    </nav>  
   </header>
-  <ul class="js-container"></ul>
-  
+  <!-- Back to top button -->
+  <a id="button"></a>
+  <ul class="js-container main animate__animated animate__fadeInLeft"></ul>  
 </body>
 </html>

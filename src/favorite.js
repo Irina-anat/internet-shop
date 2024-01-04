@@ -5,14 +5,21 @@ import { createModal } from "./helpers/createModal";
                                                                 //null undefined
 const arrFavorite = JSON.parse(localStorage.getItem(common.favoriteItems)) ?? [];
 
-
+ 
 const list = document.querySelector('.js-list');
 createMarcup(list, arrFavorite)
+
+/*const addButton = document.querySelector('.js-favorite');
+addButton.style.display = 'none'
+console.dir(addButton)
+addButton.textContent = 'Remove';*/
+
 
 list.addEventListener('click', onClick);
 
 function onClick(e) {
     e.preventDefault()
+    
     if (e.target.classList.contains('js-information')) {
         const currentProduct = findProduct(e.target);
         //console.log(currentProduct)
@@ -25,9 +32,9 @@ function onClick(e) {
             return;
         }
         arrFavorite.push(currentProduct);
-        console.log(arrFavorite)
+        console.log(arrFavorite)       
         localStorage.setItem(common.favoriteItems, JSON.stringify(arrFavorite))
     }
-}
+};
 
 

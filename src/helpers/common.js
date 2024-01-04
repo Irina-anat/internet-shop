@@ -1,6 +1,6 @@
 const common = {
     favoriteItems: "favorite-items",
-    checkoutItems: "checkout-items"
+    basketItems: "basket-items"
 };
 
 export { common };

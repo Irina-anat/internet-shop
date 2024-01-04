@@ -53,12 +53,24 @@ img {
 
 .modal {
     width: 700px;
-    padding: 10px;
-    background-color: white;
+    padding: 30px;
+    background-color: #ffffff;
 }
 
-.js-container,
-.js-list{
+.modal-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;   
+}
+
+.modal-price{
+margin-bottom: 10px;
+}
+
+.main,
+.favorite,
+.checkout{
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -89,7 +101,8 @@ button:hover {
     justify-content: space-around;
 }
 
-.title-name{
+.title-name,
+.modal-title{
     font-size: 26px;
     line-height: 1.625;
     font-weight: 700;
@@ -104,26 +117,129 @@ button:hover {
     line-height: 1.52;
     margin-bottom: 20px;
     text-align: center;
-    color: inherit;
+    color: #008000;
 }
+
 .information-link:hover{
-color: #008000;
+color: #002ead;
 }
 
-/*.card {
-    transition: transform 0.5s ease;
+
+
+#button {
+    display: inline-block;
+    background-color: #008000;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
 }
 
-.card:hover {
-    animation: rotateCard 0.5s forwards;
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
 }
 
-@keyframes rotateCard {
-    from {
-        transform: rotateY(0deg);
-    }
+#button:hover {
+    cursor: pointer;
+    background-color: #002ead;
+}
 
-    to {
-        transform: rotateY(360deg);
-    }
-}*/
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.flip {
+    position: relative;
+}
+
+.flip>.front,
+.flip>.back {
+    display: block;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 1.5s;
+    transition-property: transform, opacity;
+}
+
+.flip>.front {
+    transform: rotateY(0deg);
+}
+
+.flip>.back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+}
+
+.flip:hover>.front {
+    transform: rotateY(180deg);
+}
+
+.flip:hover>.back {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+
+.flip.flip-vertical>.back {
+    transform: rotateX(-180deg);
+}
+
+.flip.flip-vertical:hover>.front {
+    transform: rotateX(180deg);
+}
+
+.flip.flip-vertical:hover>.back {
+    transform: rotateX(0deg);
+}
+
+
+.navigation{
+    background-color: #008000;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 0.7s;
+    flex-grow: 1;
+}
+
+.visited,
+.navigation:hover,
+.navigation:active {
+    background-color: #002ead;
+}
+
+nav{
+display: flex;
+justify-content: space-around;
+margin-top: 20px;
+gap: 30px;
+}
+
+#NotiflixNotifyWrap{
+    margin-top: 10px;
+    margin-right: 10px;
+}

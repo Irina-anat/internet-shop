@@ -5,10 +5,11 @@ import { onClose } from './close';
 function createModal({ description, img, name, price }) {
  
     const instance = basicLightbox.create(
-        `<div class="modal">
+        `<div class="modal"><div class="modal-img">
 <img src="${img}" alt="${name}" width="500">
-<h2>${name}</h2>
-<h3>${price}</h3>
+</div>
+<h2 class="modal-title">${name}</h2>
+<h3 class="modal-price">${price} грн</h3>
 <p>${description}</p>
 </div>`,
         {

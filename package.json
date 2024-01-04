@@ -26,6 +26,8 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "dependencies": {
     "animate.css": "^4.1.1",
-    "basiclightbox": "^5.0.4"
+    "basiclightbox": "^5.0.4",
+    "jquery": "^3.7.1",
+    "notiflix": "^3.2.7"
   }
 }
