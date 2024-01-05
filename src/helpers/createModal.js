@@ -10,7 +10,7 @@ function createModal({ description, img, name, price }) {
 </div>
 <h2 class="modal-title">${name}</h2>
 <h3 class="modal-price">${price} грн</h3>
-<p>${description}</p>
+<p class="modal-description">${description}</p>
 </div>`,
         {
             handler: null,

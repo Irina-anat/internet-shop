@@ -8,6 +8,7 @@ console.log(btn)
                                                                //null undefined
 const arrFavorite = JSON.parse(localStorage.getItem(common.favoriteItems)) ?? [];
 
+
 const list = document.querySelector('.js-list');
 createMarcup(list, arrFavorite)
 
