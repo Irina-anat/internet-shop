@@ -1,0 +1,1 @@
+{"mappings":"ACAA","sources":["favorite.b6dcd92a.css","src/favorite.css"],"sourcesContent":[".js-favorite, .js-basketBtn {\n  display: none;\n}\n\n/*# sourceMappingURL=favorite.b6dcd92a.css.map */\n",".js-favorite,\n.js-basketBtn{\n    display: none;\n}\n\n\n\n\n"],"names":[],"version":3,"file":"favorite.b6dcd92a.css.map"}
