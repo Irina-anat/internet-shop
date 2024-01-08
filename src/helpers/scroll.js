@@ -17,4 +17,4 @@ btn.on('click', function(e) {
 
 
 
-export {btn}
+export { btn };

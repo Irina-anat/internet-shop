@@ -5,6 +5,8 @@ import { findProduct } from "./helpers/findProduct";
 import { createModal } from "./helpers/createModal";
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 console.log(btn)
+import '../src/favorite.css';
+import '../src/style.css';
                                                                //null undefined
 const arrFavorite = JSON.parse(localStorage.getItem(common.favoriteItems)) ?? [];
 

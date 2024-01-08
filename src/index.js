@@ -4,16 +4,26 @@ import { createModal } from './helpers/createModal';
 import { findProduct } from './helpers/findProduct';
 import { common } from './helpers/common';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-
 import { btn } from './helpers/scroll';
+import { advertising } from './helpers/advertising';
+import '../src/style.css';
+import '../node_modules/animate.css/animate.min.css';
+import '../node_modules/notiflix/dist/notiflix-3.2.7.min.css';
 console.log(btn)
 
+
+const box = document.querySelector('.js-box');
+const titleTimer = document.querySelector('.js-timer');
+
+let counter = 11;
+
+advertising(box, titleTimer, counter);
 
 
 const arrFavorite = JSON.parse(localStorage.getItem(common.favoriteItems)) || [];
 
 const arrBasket = JSON.parse(localStorage.getItem(common.basketItems)) || [];
-console.log(arrBasket)
+//console.log(arrBasket)
 
 const container = document.querySelector('.js-container');
 

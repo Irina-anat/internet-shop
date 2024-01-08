@@ -8,6 +8,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #fafafa;
+    min-height: 100vh;
 }
 
 ul {
@@ -33,6 +34,36 @@ h6,
 p {
     margin: 0;
     padding: 0;
+}
+
+.advertising-box{
+    position: absolute;
+    z-index: 100;
+    width: 300px;
+    height: 300px;
+    background-color: hwb(123 3% 3%);
+    padding: 20px;
+    display: none;  
+    text-align: center;
+}
+
+.advertising-title{
+font-size: 30px;
+margin-bottom: 180px;
+}
+
+.advertising-text{
+font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .advertising-text {
+        font-size: 12px;
+    }
+}
+
+.advertising-timer{
+    cursor: pointer;
 }
 
 .card {

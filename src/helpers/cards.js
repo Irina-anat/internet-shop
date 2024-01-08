@@ -1,11 +1,3 @@
-// {
-//       id: 2,
-//       img: 'https://static.dnipro-m.ua/cache/products/5096/catalog_origin_271077.jpg',
-//       name: 'Перфоратор',
-//       price: 3948,
-//       description:
-//         'Перфоратор бочковий Dnipro-M ВН-20 використовується для виконання ',
-//     },
 
 // https://via.placeholder.com/300x300
 

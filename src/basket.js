@@ -5,6 +5,8 @@ import { findProduct } from "./helpers/findProduct";
 import { createModal } from "./helpers/createModal";
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 console.log(btn)
+import '../src/basket.css';
+import '../src/style.css';
 
 
                                                                
