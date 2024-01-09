@@ -49,21 +49,17 @@ p {
 
 .advertising-title{
 font-size: 30px;
-margin-bottom: 180px;
+margin-bottom: 150px;
 }
 
 .advertising-text{
-font-size: 20px;
-}
-
-@media screen and (max-width: 600px) {
-    .advertising-text {
-        font-size: 12px;
-    }
+font-size: 16px;
+margin-bottom: 20px;
 }
 
 .advertising-timer{
     cursor: pointer;
+    font-weight: 700;
 }
 
 .card {
@@ -114,10 +110,6 @@ font-size: 12px;
         font-size: 20px;
     }
 }
-
-
-
-
 
 
 .delete {

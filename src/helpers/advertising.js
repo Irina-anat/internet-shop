@@ -6,7 +6,10 @@ function advertising(box, titleTimer, counter) {
   const id = setInterval(() => {
     // console.log(id)
     counter -= 1;
-    titleTimer.textContent = counter;
+    const formatCounter = `${counter.toString().padStart(2, '0')}`
+    titleTimer.textContent = formatCounter; //counter;
+    
+    console.log(formatCounter)
     
     if (!counter) {
       clearInterval(id)
